@@ -22,6 +22,5 @@ class laraController extends Controller
 
         return view('laraApi',compact('response'));
 
-        // 'test';
     }
 }
