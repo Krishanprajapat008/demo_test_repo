@@ -15,7 +15,6 @@ class ApiController extends Controller
     public function get_api($userId)
     {
             $data = Api::where('userId',$userId)->get()->toArray();
-            //$data = array("name" => "krishan", "city" => "Pindwara");
             return response()->json($data);
             
     }
