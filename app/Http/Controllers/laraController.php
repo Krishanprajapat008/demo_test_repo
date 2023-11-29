@@ -15,9 +15,9 @@ class laraController extends Controller
         $url = 'https://jsonplaceholder.typicode.com/posts';
 
         
-        $response = Http::withOptions(['verify' => false])->get($url);
+        $response_data = Http::withOptions(['verify' => false])->get($url);
 
-        $response = json_decode($response);
+        $response_data = json_decode($response_data);
       
 
         return view('laraApi',compact('response'));
